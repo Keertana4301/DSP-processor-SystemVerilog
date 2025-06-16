@@ -70,10 +70,9 @@ always @(posedge clk or negedge rst_n) begin
       end
 
       COMPUTE: begin
-        // Dummy butterfly for layout purposes
         integer i;
         for (i = 0; i < N; i = i + 1) begin
-          real_buf[i] <= real_buf[i]; // placeholder to trigger synthesis
+          real_buf[i] <= real_buf[i]; 
           imag_buf[i] <= imag_buf[i];
         end
         state <= OUTPUT;
