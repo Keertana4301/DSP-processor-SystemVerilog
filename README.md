@@ -17,10 +17,10 @@ A configurable digital signal processing (DSP) module implemented in SystemVeril
 │                    DSP_TOP Module                       │
 ├─────────────────────────────────────────────────────────┤
 │  Mode Selection (2-bit)                                 │
-│  ┌─────────┐    ┌─────────┐    ┌─────────────────┐     │
-│  │   FIR   │    │   IIR   │    │   FFT_RADIX2    │     │
-│  │ Filter  │    │ Filter  │    │   Transform     │     │
-│  └─────────┘    └─────────┘    └─────────────────┘     │
+│  ┌─────────┐    ┌─────────┐    ┌─────────────────┐      │
+│  │   FIR   │    │   IIR   │    │   FFT_RADIX2    │      │
+│  │ Filter  │    │ Filter  │    │   Transform     │      │
+│  └─────────┘    └─────────┘    └─────────────────┘      │
 └─────────────────────────────────────────────────────────┘
 ```
 
@@ -109,6 +109,7 @@ input  logic signed [COEF_WIDTH-1:0] iir_coeff_value,
 
 ### Waveform
 
+![Screenshot 2025-06-18 113321](https://github.com/user-attachments/assets/748bed92-9c61-4209-b5b3-8f9f8bcb840a)
 
 
 ## Known Limitations
